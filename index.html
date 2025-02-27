@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveystyles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill up the form</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="box">
+                <div class="form1">
+                    <label for="fullname" id="name-label">Full Name:</label>
+                    <input type="text" name="fullname" id="name" placeholder="Enter your full name" required>
+
+
+                    <label for="email" id="email-label">Email Id:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+
+                    <label for="age" id="number-label">Age:</label>
+                    <input type="number" name="age" id="number" min="0" max="120" placeholder="Enter your age" required>
+
+                </div>
+
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown" class="selection" required>
+                    <option value="" disabled selected>Please Pick one Option</option>
+
+                    <option value="web">Web Developer</option>
+                    <option value="analyst">Analyst</option>
+                </select>
+
+                <div class="form2">
+                    <label>Would you like to recommend freeCodeCamp to others?</label>
+                    <div class="form3">
+                        <label for="yes">
+                            <input type="radio" name="recommend" id="yes" value="yes" required>
+                            Yes</label>
+
+
+                        <label for="no">
+                            <input type="radio" name="recommend" id="no" value="no">
+                            No</label>
+
+                        <label for="maybe">
+                            <input type="radio" name="recommend" id="maybe" value="maybe">
+                            Maybe</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="interests">Select your interests:</label>
+                    <div class="form4">
+                        <label for="interest1">
+                            <input type="checkbox" id="interest1" value="interest1">
+                            Interest 1</label>
+                        <label for="interest2">
+                            <input type="checkbox" id="interest2" value="interest2">
+                            Interest 2</label>
+                    </div>
+                </div>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+
+
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
